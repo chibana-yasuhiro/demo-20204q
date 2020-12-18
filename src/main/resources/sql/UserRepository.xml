@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo20204q.Repository.UserRepository">
+  <select id="findUser" resultType="com.example.demo20204q.Model.User">
+    select id, user_name as userName, password from user where user_name = #{userName}
+  </select>
+  <insert id="insertUser">
+    insert into user (corporation_id, user_name, password)
+    values (#{corporationId},#{userName},#{password})
+  </insert>
+  <select id="findLoginUser" resultType="com.example.demo20204q.Model.User">
+    select id, corporation_id as corporationId, user_name as userName, password from user where corporation_id = #{corporationId} and user_name = #{userName}
+  </select>
+  
+</mapper>
