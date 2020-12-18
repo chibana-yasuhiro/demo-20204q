@@ -40,3 +40,6 @@ spring securityのデフォルトのログイン機能をカスタマイズ
     - AuthenticationProviderのauthenticateを独自実装
 - SecurityConfiguration
     - CorporationLoginConfiqurerを適用
+- node_modules
+     - demo_client/配下のnode_modulesはgit管理から外している
+     - `npm install`でpackage.jsonから必要なライブラリをダウンロードする
