@@ -34,3 +34,6 @@ build/
 
 ### node_module
 demo-20204q/node_modules/
+
+### mac
+.DS_Store
