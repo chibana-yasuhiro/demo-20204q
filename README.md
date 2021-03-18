@@ -30,6 +30,13 @@ npm run serve
     - Vue画面
         `http://localhost:8081/person`
 
+
+- RUN
+
+```
+./mvnw clean package spring-boot:run
+```
+
 # Explanation
 spring securityのデフォルトのログイン機能をカスタマイズ
 - CorporationPasswordAuthenticationFilter
